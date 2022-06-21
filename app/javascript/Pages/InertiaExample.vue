@@ -1,5 +1,5 @@
 <template>
-  <h1 :style="{ 'text-align': 'center' }">Hello {{name}}!</h1>
+  <h1>Hello {{name}}!</h1>
 </template>
 
 <script>
