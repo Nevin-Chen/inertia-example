@@ -3,10 +3,7 @@ class GamesController < ApplicationController
         games = Game.all
 
         render inertia: 'Home', props: {
-            games: games.map do |game|
-                game.as_json(only: %i[id title genre platform]).merge(
-                path: game_path(game))
-            end
+            games: games.as_json
         }
     end
 

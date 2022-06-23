@@ -5,7 +5,7 @@
 						<button type="submit">Generate game</button>
 					</form>
         <div v-for="game in games" :key="game.id">
-            <h3><Link :href="game.path">{{ game.title }}</Link></h3>
+            <h3><Link :href="'/games/' + game.id">{{ game.title }}</Link></h3>
         </div>
     </div>
 </template>
