@@ -1,6 +1,7 @@
 <template>
     <header>
-        <h1>hi</h1>
+        <Link href="/">Home</Link>
+        <Link href="/wishlist">Games</Link>
     </header>
 </template>
 

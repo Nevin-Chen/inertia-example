@@ -1,17 +1,15 @@
 <template>
     <div>
-    <h1>Games</h1>
+    <h1>{{ game.title }}</h1>
         <table>
             <thead>
                 <tr>
-                    <th>Title</th>
                     <th>Genre</th>
                     <th>Platform</th>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="game in games" :key="game.id">
-                    <td><span >{{ game.title }}</span></td>
+                <tr :key="game.id">
                     <td><span >{{ game.genre }}</span></td>
                     <td><span >{{ game.platform }}</span></td>
                 </tr>
@@ -23,8 +21,8 @@
 <script>
 export default {
     props: {
-        games: {
-            type: Array,
+        game: {
+            type: Object,
             required: true,
         }
     }
