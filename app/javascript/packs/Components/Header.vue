@@ -1,7 +1,7 @@
 <template>
     <header>
         <Link href="/">Home</Link>
-        <Link href="/wishlist">Games</Link>
+        <Link href="/wishlist">Wish List</Link>
     </header>
 </template>
 
