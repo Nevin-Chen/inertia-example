@@ -6,6 +6,7 @@
 					</form>
         <div v-for="game in games" :key="game.id">
             <h3><Link :href="'/games/' + game.id">{{ game.title }}</Link></h3>
+            <div><Link :href="'/games/' + game.id" method="delete" as="button" type="button">Remove</Link></div>
         </div>
     </div>
 </template>

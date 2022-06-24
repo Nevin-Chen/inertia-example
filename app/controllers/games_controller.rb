@@ -19,6 +19,12 @@ class GamesController < ApplicationController
         redirect_to root_url
     end
 
+    def destroy
+        game = Game.find(params[:id])
+        game.destroy
+        redirect_to root_url
+    end
+
     def wishlist
         render inertia: 'Games/Wishlist', props: {}
     end
