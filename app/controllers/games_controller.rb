@@ -15,11 +15,7 @@ class GamesController < ApplicationController
     end
 
     def create
-        Game.create(
-            title: Faker::Game.title,
-            genre: Faker::Game.genre,
-            platform: Faker::Game.platform
-        )
+        GenerateGameJob.perform_later
         redirect_to root_url
     end
 
