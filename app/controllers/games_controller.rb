@@ -20,7 +20,12 @@ class GamesController < ApplicationController
             genre: Faker::Game.genre,
             platform: Faker::Game.platform
         )
-        sleep 2
+        redirect_to root_url
+    end
+
+    def destroy
+        game = Game.find(params[:id])
+        game.destroy
         redirect_to root_url
     end
 
