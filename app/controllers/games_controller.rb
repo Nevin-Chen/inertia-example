@@ -1,9 +1,10 @@
 class GamesController < ApplicationController
     def index
-        games = Game.all
+    @pagy, @games = pagy(Game.all, items: 10)
 
         render inertia: 'Home', props: {
-            games: games.as_json
+            games: @games,
+            pagy: pagy_metadata(@pagy)
         }
     end
 
