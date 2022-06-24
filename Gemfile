@@ -21,8 +21,8 @@ gem 'jbuilder'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'faker', '~> 2.21'
 gem 'inertia_rails', '~> 2.0'
-gem "tailwindcss-rails", "~> 2.0"
-
+gem 'tailwindcss-rails', '~> 2.0'
+gem 'sidekiq', '~> 6.5', '>= 6.5.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
