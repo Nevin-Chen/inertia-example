@@ -8,22 +8,28 @@
             <h3><Link :href="'/games/' + game.id">{{ game.title }}</Link></h3>
             <div><Link :href="'/games/' + game.id" method="delete" as="button" type="button">Remove</Link></div>
         </div>
+        <Pagination :pagy="pagy"/>
     </div>
 </template>
 
 <script>
 import { Link } from '@inertiajs/inertia-vue3'
 import { Inertia } from '@inertiajs/inertia'
+import Pagination from './Shared/Pagination'
 
 export default {
 	components: {
-		Link
+		Link,
+    Pagination
 	},
 	props: {
 		games: {
 			type: Array,
 			required: true,
-		}
+		},
+    pagy: {
+      type: Object
+    }
 	},
   setup () {
     function submit() {
