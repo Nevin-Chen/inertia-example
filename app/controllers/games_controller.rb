@@ -17,13 +17,14 @@ class GamesController < ApplicationController
 
     def create
         GenerateGameJob.perform_later
-        redirect_to root_url
+        redirect_to request.referrer
     end
 
     def destroy
         game = Game.find(params[:id])
+        current_page = params[:page]
         game.destroy
-        redirect_to root_url
+        redirect_to request.referrer
     end
 
     def wishlist
