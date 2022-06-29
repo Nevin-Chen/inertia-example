@@ -6,12 +6,14 @@
                 <tr>
                     <th>Genre</th>
                     <th>Platform</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 <tr :key="game.id">
                     <td><span >{{ game.genre }}</span></td>
                     <td><span >{{ game.platform }}</span></td>
+                    <td><Link :href="'/games/' + game.id + '/edit'">Edit</Link></td>
                     <td><Link :href="'/games/' + game.id" method="delete" as="button" type="button">Remove</Link></td>
                 </tr>
             </tbody>
