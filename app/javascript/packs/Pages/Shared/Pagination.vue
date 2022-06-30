@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="flex items-center justify-center absolute inset-x-0 bottom-5">
     <div v-for="(link, key) in links">
       <div :key="key">
-        <div v-if="link.url === null || link.active">
+        <Link class="mr-1 px-3 py-2 text-sm border rounded text-gray-900" v-if="link.url === null || link.active">
           {{ link.label }}
-        </div>
-        <Link v-else :href="link.url">
+        </Link>
+        <Link class="mr-1 px-3 py-2 text-sm border rounded text-gray-900 border-gray-400 hover:bg-white" v-else :href="link.url">
           {{ link.label }}
         </Link>
       </div>
