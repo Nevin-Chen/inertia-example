@@ -8,7 +8,7 @@
         </div>
         <div class="relative flex items-center" v-for="game in games" :key="game.id">
             <h3><Link class="px-6 py-4 flex items-center focus:text-blue-700 hover:underline" :href="'/games/' + game.id">{{ game.title }}</Link></h3>
-            <div><Link class="inline-flex justify-center rounded-lg text-sm font-semibold py-1.5 px-2.5 bg-pink-500 text-white hover:bg-pink-300 -my-2.5" :href="'/games/' + game.id" method="delete" as="button" type="button">Remove</Link></div>
+            <div><Link class="inline-flex justify-center rounded-lg text-sm font-semibold py-1.5 px-2.5 bg-purple-500 text-white hover:bg-purple-300 -my-2.5" :href="'/games/' + game.id" method="delete" as="button" type="button">Remove</Link></div>
         </div>
         <Pagination :pagy="pagy"/>
     </div>
