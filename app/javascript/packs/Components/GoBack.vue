@@ -1,5 +1,5 @@
 <template>
-  <button class="inline-flex justify-center rounded-lg text-sm font-semibold py-1.5 px-2.5 bg-black text-white hover:bg-gray-800 -my-2.5" href="#" @click="back">Back</button>
+  <button class="border-2 border-purple-700 text-purple-700 text-sm hover:border-purple-300 bg-transparent hover:text-purple-500 py-1.5 px-2.5 rounded-md" href="#" @click="back">Back</button>
 </template>
 
 <script>

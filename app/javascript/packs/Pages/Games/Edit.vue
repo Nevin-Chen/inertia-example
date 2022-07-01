@@ -5,37 +5,43 @@
         <label class="block" for="title">
           <span class="text-1xl font-bold">Title</span>
         <input id="title" v-model="form.title" type="text" class="
+                        border-2
                         mt-1
                         block
                         w-full
                         rounded-md
-                        border-gray-900
+                        border-gray-3
                         shadow-sm
                         focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50
+                        p-1
                       "/>
         </label>
         <label class="block" for="genre">
           <span class="text-1xl font-bold">Genre</span>
           <input id="genre" v-model="form.genre" type="text" class="
+                          border-2
                           mt-1
                           block
                           w-full
                           rounded-md
-                          border-gray-900
+                          border-gray-3
                           shadow-sm
                           focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50
+                          p-1
                         "/>
         </label>
         <label class="block" for="platform">
           <span class="text-1xl font-bold">Platform</span>
           <input id="platform" v-model="form.platform" type="text" class="
+                          border-2
                           mt-1
                           block
                           w-full
                           rounded-md
-                          border-gray-900
+                          border-gray-3
                           shadow-sm
                           focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50
+                          p-1
                         "/>
         </label>
         <button class="inline-flex justify-center rounded-lg text-sm font-semibold py-1.5 px-2.5 bg-blue-500 text-white hover:bg-blue-300 -mt-2.5 mb-2.5" type="submit" :disabled="form.processing">Submit</button>
